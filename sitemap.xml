@@ -12,13 +12,13 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.ranchitaxiandcabservice.com/ranchi-city.html</loc>
+    <loc>https://www.ranchitaxiandcabservice.com/ranchi-city</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.ranchitaxiandcabservice.com/airport-taxi.html</loc>
+    <loc>https://www.ranchitaxiandcabservice.com/airport-taxi</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -26,25 +26,25 @@
 
   <!-- Service Pages -->
   <url>
-    <loc>https://www.ranchitaxiandcabservice.com/one-way-taxi.html</loc>
+    <loc>https://www.ranchitaxiandcabservice.com/one-way-taxi</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.ranchitaxiandcabservice.com/round-trip-taxi.html</loc>
+    <loc>https://www.ranchitaxiandcabservice.com/round-trip-taxi</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.ranchitaxiandcabservice.com/outstation-taxi.html</loc>
+    <loc>https://www.ranchitaxiandcabservice.com/outstation-taxi</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.ranchitaxiandcabservice.com/wedding-car.html</loc>
+    <loc>https://www.ranchitaxiandcabservice.com/wedding-car</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -52,49 +52,49 @@
 
   <!-- Jharkhand Route Pages -->
   <url>
-    <loc>https://www.ranchitaxiandcabservice.com/ranchi-to-dhanbad-taxi.html</loc>
+    <loc>https://www.ranchitaxiandcabservice.com/ranchi-to-dhanbad-taxi</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.ranchitaxiandcabservice.com/ranchi-to-jamshedpur-taxi.html</loc>
+    <loc>https://www.ranchitaxiandcabservice.com/ranchi-to-jamshedpur-taxi</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.ranchitaxiandcabservice.com/ranchi-to-bokaro-taxi.html</loc>
+    <loc>https://www.ranchitaxiandcabservice.com/ranchi-to-bokaro-taxi</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.ranchitaxiandcabservice.com/ranchi-to-hazaribagh-taxi.html</loc>
+    <loc>https://www.ranchitaxiandcabservice.com/ranchi-to-hazaribagh-taxi</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.ranchitaxiandcabservice.com/ranchi-to-deoghar-taxi.html</loc>
+    <loc>https://www.ranchitaxiandcabservice.com/ranchi-to-deoghar-taxi</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.ranchitaxiandcabservice.com/ranchi-to-giridih-taxi.html</loc>
+    <loc>https://www.ranchitaxiandcabservice.com/ranchi-to-giridih-taxi</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.ranchitaxiandcabservice.com/ranchi-to-ramgarh-taxi.html</loc>
+    <loc>https://www.ranchitaxiandcabservice.com/ranchi-to-ramgarh-taxi</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.ranchitaxiandcabservice.com/ranchi-to-netarhat-taxi.html</loc>
+    <loc>https://www.ranchitaxiandcabservice.com/ranchi-to-netarhat-taxi</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -102,17 +102,16 @@
 
   <!-- Info Pages -->
   <url>
-    <loc>https://www.ranchitaxiandcabservice.com/about.html</loc>
+    <loc>https://www.ranchitaxiandcabservice.com/about</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.ranchitaxiandcabservice.com/contact.html</loc>
+    <loc>https://www.ranchitaxiandcabservice.com/contact</loc>
     <lastmod>2026-08-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
 </urlset>
-
