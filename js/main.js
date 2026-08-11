@@ -280,6 +280,7 @@
   ];
 
   function createLiveBookingToast() {
+    if (document.querySelector('.live-booking-toast')) return;
     const toast = document.createElement('div');
     toast.className = 'live-booking-toast';
     toast.setAttribute('aria-live', 'polite');
@@ -295,7 +296,7 @@
       </div>
     `;
 
-    document.body.appendChild(toast);
+    (document.body || document.documentElement).appendChild(toast);
 
     const closeBtn = toast.querySelector('.toast-close');
     let toastTimer = null;
@@ -311,6 +312,7 @@
 
     function showNotification() {
       const item = bookingNotifications[notifyIndex];
+      if (!item) return;
       toast.querySelector('.toast-name').textContent = item.name;
       toast.querySelector('.toast-cab').textContent = item.cab;
       toast.querySelector('.toast-dest').textContent = item.route;
@@ -320,46 +322,24 @@
 
       toastTimer = setTimeout(() => {
         toast.classList.remove('show');
-      }, 5000);
+      }, 6000);
 
       notifyIndex = (notifyIndex + 1) % bookingNotifications.length;
     }
 
+    // Trigger first notification 1.2s after load
     setTimeout(() => {
       showNotification();
-      loopTimer = setInterval(showNotification, 14000);
-    }, 4000);
+      loopTimer = setInterval(showNotification, 11000);
+    }, 1200);
   }
 
-  /* ── Mobile Sticky Bottom Bar Injection ── */
-  function createMobileBottomBar() {
-    if (document.querySelector('.mobile-bottom-bar')) return;
-    const bar = document.createElement('div');
-    bar.className = 'mobile-bottom-bar';
-    bar.setAttribute('aria-label', 'Quick Mobile Contact Bar');
-    bar.innerHTML = `
-      <div class="mobile-bottom-bar-inner">
-        <a href="tel:+919006123451" class="mobile-bottom-btn mobile-bottom-btn-call">
-          📞 Call: +91 90061 23451
-        </a>
-        <a href="https://wa.me/919006123451?text=Hello!%20I%20want%20to%20book%20a%20cab%20in%20Ranchi." class="mobile-bottom-btn mobile-bottom-btn-wa" target="_blank" rel="noopener">
-          💬 WhatsApp Us
-        </a>
-      </div>
-    `;
-    document.body.appendChild(bar);
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => {
-      createLiveBookingToast();
-      createMobileBottomBar();
-    });
-  } else {
+  // Ensure execution regardless of DOM load state
+  if (document.body) {
     createLiveBookingToast();
-    createMobileBottomBar();
+  } else {
+    document.addEventListener('DOMContentLoaded', createLiveBookingToast);
   }
 
 })();
-
 
