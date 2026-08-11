@@ -27,11 +27,11 @@ Welcome to the official source code repository for **[Ranchi Taxi And Cab Servic
 
 | Outstation Route | Direct Link | Base Fare | Key Highlights |
 | :--- | :--- | :--- | :--- |
-| **Ranchi to Jamshedpur** | 🚘 [Ranchi to Jamshedpur Taxi](https://www.ranchitaxiandcabservice.com/ranchi-to-jamshedpur-taxi) | ₹1,600 | 135 km via NH-33 (Tata Nagar drop) |
-| **Ranchi to Dhanbad** | 🚘 [Ranchi to Dhanbad Cab](https://www.ranchitaxiandcabservice.com/ranchi-to-dhanbad-taxi) | ₹2,100 | 185 km via NH-32 (Coal Capital drop) |
-| **Ranchi to Bokaro** | 🚘 [Ranchi to Bokaro Taxi](https://www.ranchitaxiandcabservice.com/ranchi-to-bokaro-taxi) | ₹1,400 | 120 km via Ramgarh |
-| **Ranchi to Deoghar** | 🚘 [Ranchi to Deoghar Taxi](https://www.ranchitaxiandcabservice.com/ranchi-to-deoghar-taxi) | ₹2,800 | 250 km (Baidyanath Dham Pilgrimage) |
-| **Ranchi to Hazaribagh** | 🚘 [Ranchi to Hazaribagh Taxi](https://www.ranchitaxiandcabservice.com/ranchi-to-hazaribagh-taxi) | ₹1,200 | 100 km via NH-33 |
+| **Ranchi to Jamshedpur** | 🚘 [Ranchi to Jamshedpur Taxi](https://www.ranchitaxiandcabservice.com/ranchi-to-jamshedpur-taxi) | ₹1,800 | 135 km via NH-33 (Tata Nagar drop) |
+| **Ranchi to Dhanbad** | 🚘 [Ranchi to Dhanbad Cab](https://www.ranchitaxiandcabservice.com/ranchi-to-dhanbad-taxi) | ₹2,500 | 185 km via NH-32 (Coal Capital drop) |
+| **Ranchi to Bokaro** | 🚘 [Ranchi to Bokaro Taxi](https://www.ranchitaxiandcabservice.com/ranchi-to-bokaro-taxi) | ₹1,800 | 120 km via Ramgarh |
+| **Ranchi to Deoghar** | 🚘 [Ranchi to Deoghar Taxi](https://www.ranchitaxiandcabservice.com/ranchi-to-deoghar-taxi) | ₹2,400 | 250 km (Baidyanath Dham Pilgrimage) |
+| **Ranchi to Hazaribagh** | 🚘 [Ranchi to Hazaribagh Taxi](https://www.ranchitaxiandcabservice.com/ranchi-to-hazaribagh-taxi) | ₹1,800 | 100 km via NH-33 |
 | **Ranchi to Giridih** | 🚘 [Ranchi to Giridih Taxi](https://www.ranchitaxiandcabservice.com/ranchi-to-giridih-taxi) | ₹1,800 | 160 km (Parasnath Hill / Shikharji) |
 | **Ranchi to Netarhat** | 🚘 [Ranchi to Netarhat Cab](https://www.ranchitaxiandcabservice.com/ranchi-to-netarhat-taxi) | ₹3,200 | Queen of Chotanagpur Hill Station |
 | **Ranchi to Ramgarh** | 🚘 [Ranchi to Ramgarh Taxi](https://www.ranchitaxiandcabservice.com/ranchi-to-ramgarh-taxi) | ₹800 | 60 km (Patratu Valley & Rajrappa) |
