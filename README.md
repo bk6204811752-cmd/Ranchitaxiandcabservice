@@ -15,7 +15,6 @@ Welcome to the official source code repository for **[Ranchi Taxi And Cab Servic
 | :--- | :--- | :--- |
 | **Official Homepage** | 🔗 [Ranchi Taxi Service](https://www.ranchitaxiandcabservice.com/) | Main 24/7 taxi booking portal |
 | **Airport Taxi** | ✈️ [Birsa Munda Airport Taxi](https://www.ranchitaxiandcabservice.com/airport-taxi) | Airport pickup & drop cab service |
-| **Ranchi City Cab** | 🏙️ [Local Ranchi City Cab](https://www.ranchitaxiandcabservice.com/ranchi-city) | Local hourly & sightseeing cabs |
 | **One Way Taxi** | 🚕 [One Way Taxi Ranchi](https://www.ranchitaxiandcabservice.com/one-way-taxi) | Intercity one-way cab (No return fare) |
 | **Round Trip Taxi** | 🔄 [Outstation Round Trip Cab](https://www.ranchitaxiandcabservice.com/round-trip-taxi) | Multi-day outstation tour packages |
 | **Outstation Taxi** | 🛣️ [Outstation Taxi Service](https://www.ranchitaxiandcabservice.com/outstation-taxi) | Long-distance intercity cab rentals |
@@ -30,11 +29,13 @@ Welcome to the official source code repository for **[Ranchi Taxi And Cab Servic
 | **Ranchi to Jamshedpur** | 🚘 [Ranchi to Jamshedpur Taxi](https://www.ranchitaxiandcabservice.com/ranchi-to-jamshedpur-taxi) | ₹1,800 | 135 km via NH-33 (Tata Nagar drop) |
 | **Ranchi to Dhanbad** | 🚘 [Ranchi to Dhanbad Cab](https://www.ranchitaxiandcabservice.com/ranchi-to-dhanbad-taxi) | ₹2,500 | 185 km via NH-32 (Coal Capital drop) |
 | **Ranchi to Bokaro** | 🚘 [Ranchi to Bokaro Taxi](https://www.ranchitaxiandcabservice.com/ranchi-to-bokaro-taxi) | ₹1,800 | 120 km via Ramgarh |
-| **Ranchi to Deoghar** | 🚘 [Ranchi to Deoghar Taxi](https://www.ranchitaxiandcabservice.com/ranchi-to-deoghar-taxi) | ₹2,400 | 250 km (Baidyanath Dham Pilgrimage) |
+| **Ranchi to Deoghar** | 🚘 [Ranchi to Deoghar Taxi](https://www.ranchitaxiandcabservice.com/ranchi-to-deoghar-taxi) | ₹6,000 | 250 km (Baidyanath Dham Pilgrimage) |
 | **Ranchi to Hazaribagh** | 🚘 [Ranchi to Hazaribagh Taxi](https://www.ranchitaxiandcabservice.com/ranchi-to-hazaribagh-taxi) | ₹1,800 | 100 km via NH-33 |
-| **Ranchi to Giridih** | 🚘 [Ranchi to Giridih Taxi](https://www.ranchitaxiandcabservice.com/ranchi-to-giridih-taxi) | ₹1,800 | 160 km (Parasnath Hill / Shikharji) |
-| **Ranchi to Netarhat** | 🚘 [Ranchi to Netarhat Cab](https://www.ranchitaxiandcabservice.com/ranchi-to-netarhat-taxi) | ₹3,200 | Queen of Chotanagpur Hill Station |
-| **Ranchi to Ramgarh** | 🚘 [Ranchi to Ramgarh Taxi](https://www.ranchitaxiandcabservice.com/ranchi-to-ramgarh-taxi) | ₹800 | 60 km (Patratu Valley & Rajrappa) |
+| **Ranchi to Giridih** | 🚘 [Ranchi to Giridih Taxi](https://www.ranchitaxiandcabservice.com/ranchi-to-giridih-taxi) | ₹3,500 | 160 km (Parasnath Hill / Shikharji) |
+| **Ranchi to Patna** | 🚘 [Ranchi to Patna Taxi](https://www.ranchitaxiandcabservice.com/ranchi-to-patna-taxi) | ₹7,000 | 410 km via NH-19 (Bihar Capital) |
+| **Ranchi to Kolkata** | 🚘 [Ranchi to Kolkata Taxi](https://www.ranchitaxiandcabservice.com/ranchi-to-kolkata-taxi) | ₹7,000 | 440 km via NH-49 (City of Joy) |
+| **Kolkata to Ranchi** | 🚘 [Kolkata to Ranchi Taxi](https://www.ranchitaxiandcabservice.com/kolkata-to-ranchi-taxi) | ₹7,000 | Reverse of the Ranchi–Kolkata route |
+| **Kolkata to Jamshedpur** | 🚘 [Kolkata to Jamshedpur Taxi](https://www.ranchitaxiandcabservice.com/kolkata-to-jamshedpur-taxi) | ₹2,999 | 290 km via NH-49 (Tata Nagar drop) |
 
 ---
 

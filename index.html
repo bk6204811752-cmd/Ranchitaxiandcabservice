@@ -15,6 +15,8 @@
   <meta name="robots" content="index, follow">
   <meta name="geo.region" content="IN-JH">
   <meta name="geo.placename" content="Ranchi, Jharkhand">
+  <meta name="geo.position" content="23.3441;85.3096">
+  <meta name="ICBM" content="23.3441, 85.3096">
   <link rel="canonical" href="https://www.ranchitaxiandcabservice.com/">
 
   <!-- Open Graph -->
@@ -22,7 +24,9 @@
   <meta property="og:url" content="https://www.ranchitaxiandcabservice.com/">
   <meta property="og:title" content="Taxi service in Ranchi & Airport Cab | 9006123451 | Oneway Cab">
   <meta property="og:description" content="Book reliable cabs in Ranchi for airport transfers, outstation trips, one-way & round trips. Verified drivers, fixed prices, 24/7 service. Call now!">
-  <meta property="og:image" content="https://www.ranchitaxiandcabservice.com/images/logo.webp">
+  <meta property="og:image" content="https://www.ranchitaxiandcabservice.com/favicon-192x192.png">
+  <meta property="og:image:width" content="192">
+  <meta property="og:image:height" content="192">
   <meta property="og:site_name" content="Ranchi Taxi And Cab Service">
   <meta property="og:locale" content="en_IN">
 
@@ -40,15 +44,34 @@
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": ["LocalBusiness", "TaxiService"],
-        "@id": "https://www.ranchitaxiandcabservice.com/#business",
-      "logo": "https://www.ranchitaxiandcabservice.com/favicon-192x192.png",
-      "image": "https://www.ranchitaxiandcabservice.com/favicon-192x192.png",
+        "@type": "Organization",
+        "@id": "https://www.ranchitaxiandcabservice.com/#organization",
         "name": "Ranchi Taxi And Cab Service",
-        "alternateName": "Ranchi Taxi Cab",
         "url": "https://www.ranchitaxiandcabservice.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.ranchitaxiandcabservice.com/favicon-192x192.png",
+          "width": 192,
+          "height": 192
+        },
+        "image": "https://www.ranchitaxiandcabservice.com/favicon-192x192.png",
         "telephone": "+919006123451",
         "email": "ranchitaxicab01@gmail.com",
+        "sameAs": [
+          "https://wa.me/919006123451"
+        ]
+      },
+      {
+        "@type": ["LocalBusiness", "TaxiService"],
+        "@id": "https://www.ranchitaxiandcabservice.com/#business",
+        "name": "Ranchi Taxi And Cab Service",
+        "alternateName": ["Ranchi Cab Service", "Ranchi Taxi", "Cab in Ranchi", "Taxi in Ranchi"],
+        "url": "https://www.ranchitaxiandcabservice.com/",
+        "logo": "https://www.ranchitaxiandcabservice.com/favicon-192x192.png",
+        "image": "https://www.ranchitaxiandcabservice.com/favicon-192x192.png",
+        "telephone": "+919006123451",
+        "email": "ranchitaxicab01@gmail.com",
+        "description": "Ranchi most trusted taxi and cab service since 2014. Book one-way, round trip, outstation, airport transfer and wedding cabs. 24/7 available at +91 90061 23451.",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Birsa Munda Airport, Khokambatoli, Hinoo",
@@ -59,8 +82,8 @@
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": 23.3143,
-          "longitude": 85.3218
+          "latitude": 23.3441,
+          "longitude": 85.3096
         },
         "openingHoursSpecification": {
           "@type": "OpeningHoursSpecification",
@@ -68,13 +91,19 @@
           "opens": "00:00",
           "closes": "23:59"
         },
-        "priceRange": "₹₹",
+        "priceRange": "INR",
         "currenciesAccepted": "INR",
         "paymentAccepted": "Cash, UPI, Online Transfer",
-        "areaServed": {
-          "@type": "City",
-          "name": "Ranchi"
-        },
+        "areaServed": [
+          {"@type": "City", "name": "Ranchi"},
+          {"@type": "City", "name": "Dhanbad"},
+          {"@type": "City", "name": "Jamshedpur"},
+          {"@type": "City", "name": "Bokaro"},
+          {"@type": "City", "name": "Hazaribagh"},
+          {"@type": "City", "name": "Deoghar"},
+          {"@type": "City", "name": "Patna"},
+          {"@type": "City", "name": "Kolkata"}
+        ],
         "hasMap": "https://maps.google.com/?q=Birsa+Munda+Airport+Ranchi",
         "sameAs": [
           "https://wa.me/919006123451"
@@ -83,7 +112,8 @@
           "@type": "AggregateRating",
           "ratingValue": "4.8",
           "reviewCount": "620",
-          "bestRating": "5"
+          "bestRating": "5",
+          "worstRating": "1"
         }
       },
       {
@@ -92,11 +122,35 @@
         "url": "https://www.ranchitaxiandcabservice.com/",
         "name": "Ranchi Taxi And Cab Service",
         "inLanguage": "en-IN",
+        "publisher": {"@id": "https://www.ranchitaxiandcabservice.com/#organization"},
         "potentialAction": {
           "@type": "SearchAction",
           "target": "https://www.ranchitaxiandcabservice.com/?s={search_term_string}",
           "query-input": "required name=search_term_string"
         }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.ranchitaxiandcabservice.com/#webpage",
+        "url": "https://www.ranchitaxiandcabservice.com/",
+        "name": "Taxi Service in Ranchi & Airport Cab | 9006123451 | Book Cab Ranchi 24/7",
+        "description": "Ranchi Taxi And Cab Service - #1 trusted taxi service in Ranchi, Jharkhand. Book one-way, round trip, outstation, airport transfer & wedding cabs. 24/7 service. Call +91 90061 23451.",
+        "inLanguage": "en-IN",
+        "isPartOf": {"@id": "https://www.ranchitaxiandcabservice.com/#website"},
+        "about": {"@id": "https://www.ranchitaxiandcabservice.com/#business"},
+        "breadcrumb": {"@id": "https://www.ranchitaxiandcabservice.com/#breadcrumb"}
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://www.ranchitaxiandcabservice.com/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.ranchitaxiandcabservice.com/"
+          }
+        ]
       },
       {
         "@type": "FAQPage",
@@ -106,7 +160,7 @@
             "name": "How do I book a cab in Ranchi?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "You can book a cab by calling us at +91 90061 23451 or via WhatsApp. We offer instant booking 24/7 for all cab types including one-way, round trip, outstation, and airport transfers."
+              "text": "You can book a cab in Ranchi by calling us at +91 90061 23451 or via WhatsApp. We offer instant booking 24/7 for all cab types including one-way, round trip, outstation, and airport transfers in Ranchi."
             }
           },
           {
@@ -114,7 +168,7 @@
             "name": "What is the taxi fare from Ranchi to Birsa Munda Airport?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "The taxi fare from Ranchi city to Birsa Munda Airport (Hinoo) starts from ₹400 for a sedan. The fare may vary based on pickup location, time, and vehicle type."
+              "text": "The taxi fare from Ranchi city to Birsa Munda Airport (Hinoo) starts from Rs.400 for a sedan. The fare may vary based on pickup location, time, and vehicle type. Call +91 90061 23451 for exact fare."
             }
           },
           {
@@ -122,7 +176,7 @@
             "name": "Do you provide 24/7 taxi service in Ranchi?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, Ranchi Taxi And Cab Service operates 24 hours a day, 7 days a week, including early morning flights and late night pickups."
+              "text": "Yes, Ranchi Taxi And Cab Service operates 24 hours a day, 7 days a week, including early morning flights and late night pickups. We are always available for taxi and cab bookings in Ranchi."
             }
           },
           {
@@ -130,7 +184,7 @@
             "name": "What is the taxi fare per km in Ranchi?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Our taxi fare in Ranchi starts from ₹12/km for a sedan (Swift Dzire, Honda Amaze) and ₹16/km for SUVs (Innova Crysta, Ertiga). Outstation fares start at ₹11/km."
+              "text": "Our taxi fare in Ranchi starts from Rs.12/km for a sedan (Swift Dzire, Honda Amaze) and Rs.16/km for SUVs (Innova Crysta, Ertiga). Outstation cab fares from Ranchi start at Rs.11/km."
             }
           },
           {
@@ -138,15 +192,22 @@
             "name": "Do you provide outstation cab service from Ranchi?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, we provide outstation cab service from Ranchi to Patna, Dhanbad, Jamshedpur, Bokaro, Kolkata, Varanasi, and all major cities in Jharkhand and neighboring states."
+              "text": "Yes, we provide outstation cab service from Ranchi to Patna, Dhanbad, Jamshedpur, Bokaro, Kolkata, Hazaribagh, Deoghar, and all major cities in Jharkhand and neighboring states."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which cab types are available for taxi service in Ranchi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We offer Swift Dzire, Honda Amaze (sedan), Maruti Ertiga (SUV), Toyota Innova Crysta, and Tempo Traveller for group travel. All cabs are AC with verified drivers for taxi service in Ranchi."
             }
           }
         ]
       }
     ]
   }
-  </script>
-</head>
+  </script></head>
 <body>
 
 <!-- ── Header ─────────────────────────────────────────── -->

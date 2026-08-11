@@ -1558,3 +1558,9 @@ html.js .animate-on-scroll.visible {
   border-top: 1px solid rgba(255,255,255,0.08);
   padding-top: 0.6rem;
 }
+.route-desc {
+  font-size: var(--text-sm);
+  color: var(--white-70);
+  line-height: 1.7;
+  margin: 0;
+}
