@@ -1439,6 +1439,63 @@ html.js .animate-on-scroll.visible {
 .animate-delay-3 { transition-delay: 0.3s; }
 .animate-delay-4 { transition-delay: 0.4s; }
 
+/* ── Mobile Sticky Bottom Bar ─────────────────────────── */
+.mobile-bottom-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9998;
+  background: rgba(10, 22, 40, 0.95);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-top: 1px solid rgba(245, 158, 11, 0.35);
+  padding: 8px 12px max(8px, env(safe-area-inset-bottom));
+  box-shadow: 0 -5px 25px rgba(0, 0, 0, 0.6);
+}
+
+.mobile-bottom-bar-inner {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.mobile-bottom-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  height: 46px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  padding: 0 10px;
+  white-space: nowrap;
+}
+
+.mobile-bottom-btn:active {
+  transform: scale(0.97);
+}
+
+.mobile-bottom-btn-call {
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+  color: #0A1628;
+  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.35);
+}
+
+.mobile-bottom-btn-wa {
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: #FFFFFF;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.35);
+}
+
 /* ── Responsive ───────────────────────────────────────── */
 @media (max-width: 1024px) {
   .hero-grid, .page-hero-grid { grid-template-columns: 1fr; gap: var(--space-xl); }
@@ -1448,11 +1505,55 @@ html.js .animate-on-scroll.visible {
   .contact-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 768px) {
+  .mobile-bottom-bar { display: block; }
+
+  /* Body padding to prevent mobile bottom bar overlapping footer */
+  body { padding-bottom: 65px; }
+
+  /* Offset floating buttons above bottom bar */
+  .floating-buttons {
+    bottom: 75px !important;
+    right: 15px !important;
+  }
+  
+  /* Offset live booking toast above bottom bar */
+  .live-booking-toast {
+    bottom: 75px !important;
+    left: 12px !important;
+    max-width: calc(100vw - 85px) !important;
+  }
+
+  /* Prevent font auto-zooming on iOS Safari */
+  input[type="text"],
+  input[type="number"],
+  input[type="date"],
+  input[type="email"],
+  input[type="tel"],
+  select,
+  textarea {
+    font-size: 16px !important;
+  }
+
+  /* Clamped mobile typography */
+  .hero-title {
+    font-size: clamp(1.8rem, 7vw, 2.8rem) !important;
+    line-height: 1.25 !important;
+  }
+
+  .section-title {
+    font-size: clamp(1.5rem, 5.5vw, 2.2rem) !important;
+  }
+
+  /* Smooth touch scrolling for tables */
+  div[style*="overflow-x:auto"] {
+    -webkit-overflow-scrolling: touch;
+  }
+
   .nav-links, .nav-cta { display: none; }
   .nav-hamburger { display: flex; }
   .hero-grid, .page-hero-grid { grid-template-columns: 1fr; }
   .booking-card { display: block; width: 100%; margin-top: 1.5rem; }
-  .hero, .page-hero { min-height: auto; padding: 120px 0 60px; }
+  .hero, .page-hero { min-height: auto; padding: 110px 0 50px; }
   .hero-stats { gap: var(--space-md); }
   .trust-bar-inner { gap: var(--space-md); }
   .footer-grid { grid-template-columns: 1fr; }
@@ -1467,6 +1568,7 @@ html.js .animate-on-scroll.visible {
   .hero-actions { flex-direction: column; }
   .cta-actions { flex-direction: column; align-items: center; }
 }
+
 
 /* ── Route Cards (Homepage) ───────────────────────────── */
 .route-cards-grid {

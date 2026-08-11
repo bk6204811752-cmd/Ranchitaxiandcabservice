@@ -331,11 +331,35 @@
     }, 4000);
   }
 
+  /* ── Mobile Sticky Bottom Bar Injection ── */
+  function createMobileBottomBar() {
+    if (document.querySelector('.mobile-bottom-bar')) return;
+    const bar = document.createElement('div');
+    bar.className = 'mobile-bottom-bar';
+    bar.setAttribute('aria-label', 'Quick Mobile Contact Bar');
+    bar.innerHTML = `
+      <div class="mobile-bottom-bar-inner">
+        <a href="tel:+919006123451" class="mobile-bottom-btn mobile-bottom-btn-call">
+          📞 Call: +91 90061 23451
+        </a>
+        <a href="https://wa.me/919006123451?text=Hello!%20I%20want%20to%20book%20a%20cab%20in%20Ranchi." class="mobile-bottom-btn mobile-bottom-btn-wa" target="_blank" rel="noopener">
+          💬 WhatsApp Us
+        </a>
+      </div>
+    `;
+    document.body.appendChild(bar);
+  }
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', createLiveBookingToast);
+    document.addEventListener('DOMContentLoaded', () => {
+      createLiveBookingToast();
+      createMobileBottomBar();
+    });
   } else {
     createLiveBookingToast();
+    createMobileBottomBar();
   }
 
 })();
+
 
