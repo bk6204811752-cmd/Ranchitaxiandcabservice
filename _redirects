@@ -1,31 +1,9 @@
-# Native Cloudflare Pages 404 redirection at 0% CPU cost
-/* /404.html 404
+# Native Cloudflare Pages 404 redirection
+# 301 redirects for removed or moved route pages only
 
-# 301 redirects for removed route pages
 /ranchi-city / 301
 /ranchi-city.html / 301
 /ranchi-to-ramgarh-taxi /outstation-taxi.html 301
 /ranchi-to-ramgarh-taxi.html /outstation-taxi.html 301
 /ranchi-to-netarhat-taxi /outstation-taxi.html 301
 /ranchi-to-netarhat-taxi.html /outstation-taxi.html 301
-
-# 301 redirects: old non-.html URLs from sitemap -> .html canonical versions
-/airport-taxi /airport-taxi.html 301
-/one-way-taxi /one-way-taxi.html 301
-/round-trip-taxi /round-trip-taxi.html 301
-/outstation-taxi /outstation-taxi.html 301
-/wedding-car /wedding-car.html 301
-/ranchi-sightseeing /ranchi-sightseeing.html 301
-/netarhat-sightseeing /netarhat-sightseeing.html 301
-/ranchi-to-dhanbad-taxi /ranchi-to-dhanbad-taxi.html 301
-/ranchi-to-jamshedpur-taxi /ranchi-to-jamshedpur-taxi.html 301
-/ranchi-to-bokaro-taxi /ranchi-to-bokaro-taxi.html 301
-/ranchi-to-hazaribagh-taxi /ranchi-to-hazaribagh-taxi.html 301
-/ranchi-to-deoghar-taxi /ranchi-to-deoghar-taxi.html 301
-/ranchi-to-giridih-taxi /ranchi-to-giridih-taxi.html 301
-/ranchi-to-patna-taxi /ranchi-to-patna-taxi.html 301
-/ranchi-to-kolkata-taxi /ranchi-to-kolkata-taxi.html 301
-/kolkata-to-ranchi-taxi /kolkata-to-ranchi-taxi.html 301
-/kolkata-to-jamshedpur-taxi /kolkata-to-jamshedpur-taxi.html 301
-/about /about.html 301
-/contact /contact.html 301
