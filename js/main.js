@@ -265,4 +265,77 @@
     });
   });
 
+  /* ── Live Booking Toast Notifications (Social Proof) ── */
+  const bookingNotifications = [
+    { name: 'Rahul Sharma', location: 'Harmu, Ranchi', route: 'Birsa Munda Airport (IXR)', cab: 'Swift Dzire', time: '2 mins ago' },
+    { name: 'Priya Singh', location: 'Lalpur, Ranchi', route: 'Ranchi to Deoghar', cab: 'Dzire Sedan', time: '5 mins ago' },
+    { name: 'Vikash Mahato', location: 'Hinoo, Ranchi', route: 'Ranchi to Jamshedpur', cab: 'Toyota Innova Crysta', time: '7 mins ago' },
+    { name: 'Amit Kumar', location: 'Main Road, Ranchi', route: 'Ranchi Sightseeing Tour', cab: 'Maruti Ertiga', time: 'Just now' },
+    { name: 'Suresh Rai', location: 'Kanke Road, Ranchi', route: 'Ranchi to Bokaro', cab: 'Swift Dzire', time: '3 mins ago' },
+    { name: 'Rohan Tiwari', location: 'Morabadi, Ranchi', route: 'Ranchi to Netarhat (2-Day)', cab: 'Tempo Traveller', time: '11 mins ago' },
+    { name: 'Sneha Verma', location: 'Ranchi Airport', route: 'Airport to City Drop', cab: 'Swift Dzire', time: '4 mins ago' },
+    { name: 'Deepak Choudhary', location: 'Dharampur, Ranchi', route: 'Ranchi to Patna', cab: 'Innova Crysta', time: '15 mins ago' },
+    { name: 'Anjali Gupta', location: 'Doranda, Ranchi', route: 'Ranchi to Hazaribagh', cab: 'Dzire Sedan', time: '8 mins ago' },
+    { name: 'Rajesh Mishra', location: 'Bariatu, Ranchi', route: 'Ranchi to Dhanbad', cab: 'Maruti Ertiga', time: '6 mins ago' }
+  ];
+
+  function createLiveBookingToast() {
+    const toast = document.createElement('div');
+    toast.className = 'live-booking-toast';
+    toast.setAttribute('aria-live', 'polite');
+    toast.setAttribute('role', 'status');
+
+    toast.innerHTML = `
+      <button class="toast-close" aria-label="Close notification">&times;</button>
+      <div class="toast-avatar">🚖</div>
+      <div class="toast-content">
+        <div class="toast-title"><span class="toast-name"></span> <span class="toast-badge">Verified Booking</span></div>
+        <div class="toast-route">Booked <strong class="toast-cab"></strong> &bull; <span class="toast-dest"></span></div>
+        <div class="toast-time"><span>⏱️</span> <span class="toast-time-text"></span></div>
+      </div>
+    `;
+
+    document.body.appendChild(toast);
+
+    const closeBtn = toast.querySelector('.toast-close');
+    let toastTimer = null;
+    let loopTimer = null;
+
+    closeBtn.addEventListener('click', () => {
+      toast.classList.remove('show');
+      if (toastTimer) clearTimeout(toastTimer);
+      if (loopTimer) clearInterval(loopTimer);
+    });
+
+    let notifyIndex = 0;
+
+    function showNotification() {
+      const item = bookingNotifications[notifyIndex];
+      toast.querySelector('.toast-name').textContent = item.name;
+      toast.querySelector('.toast-cab').textContent = item.cab;
+      toast.querySelector('.toast-dest').textContent = item.route;
+      toast.querySelector('.toast-time-text').textContent = `${item.location} • ${item.time}`;
+
+      toast.classList.add('show');
+
+      toastTimer = setTimeout(() => {
+        toast.classList.remove('show');
+      }, 5000);
+
+      notifyIndex = (notifyIndex + 1) % bookingNotifications.length;
+    }
+
+    setTimeout(() => {
+      showNotification();
+      loopTimer = setInterval(showNotification, 14000);
+    }, 4000);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', createLiveBookingToast);
+  } else {
+    createLiveBookingToast();
+  }
+
 })();
+

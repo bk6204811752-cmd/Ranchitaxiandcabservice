@@ -1564,3 +1564,129 @@ html.js .animate-on-scroll.visible {
   line-height: 1.7;
   margin: 0;
 }
+
+/* ── Live Booking Toast Notification (Social Proof) ── */
+.live-booking-toast {
+  position: fixed;
+  bottom: 25px;
+  left: 25px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(10, 22, 40, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.6), 0 0 15px rgba(245, 158, 11, 0.2);
+  border-radius: 14px;
+  padding: 12px 16px;
+  max-width: 360px;
+  width: calc(100vw - 40px);
+  transform: translateY(120px) scale(0.95);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease, visibility 0.4s ease;
+  pointer-events: none;
+}
+
+.live-booking-toast.show {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.toast-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.25), rgba(245, 158, 11, 0.05));
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.toast-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.toast-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+  margin-bottom: 2px;
+}
+
+.toast-name {
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: #FFFFFF;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.toast-badge {
+  font-size: 0.62rem;
+  font-weight: 700;
+  color: #10B981;
+  background: rgba(16, 185, 129, 0.15);
+  padding: 2px 6px;
+  border-radius: 4px;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  flex-shrink: 0;
+}
+
+.toast-route {
+  font-size: 0.8rem;
+  color: rgba(243, 244, 246, 0.9);
+  margin-bottom: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.toast-route strong {
+  color: #F59E0B;
+}
+
+.toast-time {
+  font-size: 0.72rem;
+  color: rgba(243, 244, 246, 0.55);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.toast-close {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 2px 6px;
+  line-height: 1;
+  transition: color 0.2s ease;
+}
+
+.toast-close:hover {
+  color: #F59E0B;
+}
+
+@media (max-width: 768px) {
+  .live-booking-toast {
+    bottom: 85px;
+    left: 15px;
+    max-width: calc(100vw - 80px);
+    padding: 10px 14px;
+  }
+}
